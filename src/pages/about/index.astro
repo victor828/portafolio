@@ -1,5 +1,6 @@
 ---
 import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
 ---
 
 <html lang='en'>
@@ -8,7 +9,43 @@ import BaseHead from "../../components/BaseHead.astro";
   </head>
 
   <main>
-    <h1>Hello</h1>
+    <Header title='About me' />
+    <div class='container'>
+      <article class='🦖'>
+        <p class='text-white'>
+          ¡Hola! Encantado de conocerte, soy Victor. Me caracterizo por ser una
+          persona curiosa y apasionada por el aprendizaje en todas sus formas. A
+          lo largo de mi vida, he cultivado un interés constante en el
+          fascinante mundo de la programación, aunque lamentablemente no tuve la
+          oportunidad de estudiarlo en mis etapas anteriores. No obstante, no
+          veo esto como un obstáculo, sino como una parte natural de mi viaje
+          hacia el conocimiento.
+        </p>
+        <p>
+          Ahora, al sumergirme en el vasto universo de la programación, puedo
+          afirmar sin duda que no me arrepiento en absoluto de haber tomado esta
+          decisión en este momento de mi vida. Estoy increíblemente orgulloso de
+          los progresos que he logrado hasta ahora y de los desafíos que he
+          superado en el proceso. Aunque estoy en las etapas iniciales de mi
+          carrera en este campo, la ilusión y la motivación que me impulsan son
+          enormes.
+        </p>
+        <p>
+          Desde mi infancia, la tecnología ha sido mi gran pasión, y ahora,
+          finalmente, tengo la oportunidad de convertir esa pasión en una
+          carrera significativa. Mi deseo es trabajar con una empresa que me
+          brinde desafíos estimulantes, oportunidades de crecimiento y
+          conocimientos profundos en el área de la programación.
+        </p>
+        <p>
+          Estoy listo y emocionado por lo que el futuro en el mundo de la
+          programación me depara. Estoy dispuesto a aprender, crecer y
+          contribuir de manera significativa en este apasionante campo. ¡Espero
+          con entusiasmo las oportunidades que vendrán y estoy decidido a hacer
+          de mi carrera en la programación un viaje exitoso y gratificante!
+        </p>
+      </article>
+    </div>
   </main>
 
   <style>
@@ -16,8 +53,31 @@ import BaseHead from "../../components/BaseHead.astro";
       height: 100vh;
       background: var(--backround-body);
     }
+    .container {
+      padding: 3%;
+      box-sizing: border-box;
+    }
     h1 {
       /* color: black; */
+    }
+    .🦖 {
+      color: aliceblue;
+      /* max-width: auto; */
+      text-wrap: pretty;
+      padding: 1rem;
+      border-radius: 1rem;
+      border: var(--border-color);
+      background-color: rgba(79, 79, 79, 0.4);
+      border-color: rgb(93, 93, 93);
+      box-sizing: border-box;
+    }
+    🦖 p {
+      opacity: 100%;
+    }
+    .🦝:hover,
+    /* .🦖, */
+    .😶‍🌫️:hover {
+      border-color: rgb(230 57 70);
     }
   </style>
 </html>
