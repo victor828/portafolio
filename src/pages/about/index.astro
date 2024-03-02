@@ -10,8 +10,9 @@ import Header from "../../components/Header.astro";
 
   <main>
     <Header title='About me' />
-    <div class='container'>
+    <div class='container grid gap-4'>
       <article class='🦖'>
+        <h2>Algo sobre mi</h2>
         <p class='text-white'>
           ¡Hola! Encantado de conocerte, soy Victor. Me caracterizo por ser una
           persona curiosa y apasionada por el aprendizaje en todas sus formas. A
@@ -45,12 +46,50 @@ import Header from "../../components/Header.astro";
           de mi carrera en la programación un viaje exitoso y gratificante!
         </p>
       </article>
+      <article class='🦖'>
+        <h2>Eduacion</h2>
+        <p>
+          Estudie desarrollo web con Codeable, un bootcam full stack en el cual
+          durante 6 meses estuve aprendiendo inetensamente desde lo mas basico
+          hasta legar a poder realizar una pagina full stack
+        </p>
+        <h3>aprendizaje</h3>
+        <h4>base</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <h4>Frontend</h4>
+        <ul>
+          <li>Vite</li>
+          <li>React</li>
+          <li>CSS modules</li>
+          <li>Testing</li>
+        </ul>
+        <h4>Backend</h4>
+        <ul>
+          <li>TypeScript</li>
+          <li>Node</li>
+          <li>SQL</li>
+          <li>PostgreSQL</li>
+          <li>Express</li>
+          <li>Cookies</li>
+          <li>Token</li>
+          <li>Authorization</li>
+          <li>Authentication</li>
+        </ul>
+        <h4>adicional</h4>
+        <ul>
+          <li>Big O notation</li>
+        </ul>
+      </article>
     </div>
   </main>
 
   <style>
     main {
-      height: 100vh;
+      /* height: 100vh; */
       background: var(--backround-body);
     }
     .container {
@@ -78,6 +117,15 @@ import Header from "../../components/Header.astro";
     /* .🦖, */
     .😶‍🌫️:hover {
       border-color: rgb(230 57 70);
+    }
+    .📜,
+    li {
+      position: relative;
+      left: 20px;
+      list-style: circle;
+    }
+    li:hover {
+      color: brown;
     }
   </style>
 </html>
