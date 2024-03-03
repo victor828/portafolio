@@ -1,15 +1,21 @@
 ---
 
 const { title } = Astro.props;
+let isHidden = "hidden"
+const handleHidden = () => {
+
+  isHidden === "hidden" ? "" : "hidden"
+}
+
 
 ---
 
 <header>
-  <button class='text-white p-2 rounded-lg m-1 text-xl'>Menu</button>
+  <button onclick={handleHidden} class='text-white p-2 rounded-lg m-1 text-xl'>Menu</button>
   <h1>{title}</h1>
 </header>
-<nav id="menu" class='menu'>
-  <ol>
+<nav class={isHidden}>
+  <ol class="grid gap-2">
     <li><a href='/'>Home</a></li><li><a href='/about'>About</a></li><li>
       <a href='/proyect'>Proyects</a>
     </li>
@@ -37,7 +43,13 @@ const { title } = Astro.props;
     position: absolute;
     left: 13px;
     top: 54px;
-    background-color: rgba(79,79,79,0.4);
+    background-color: rgba(79,79,79,0.98);
+    border-radius: 0 1rem 1rem 1rem;
+  }
+  li{
+    background-color: gray;
+    border-radius: 8px;
+    text-align: center;
   }
   li:hover{
     border: var(--border-color);
