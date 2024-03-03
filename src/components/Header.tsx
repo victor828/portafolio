@@ -1,17 +1,14 @@
----
+import { useState } from 'preact/hooks'
 
-const { title } = Astro.props;
-let isHidden = "hidden"
-const handleHidden = () => {
-
-  isHidden === "hidden" ? "" : "hidden"
-}
-
-
----
-
-<header>
-  <button onclick={handleHidden} class='text-white p-2 rounded-lg m-1 text-xl'>Menu</button>
+export function Header ({title}:{title:string}){
+  const [isHidden, setHidden] = useState("hidden")
+  const handleHidden = () => {
+    isHidden === "hidden" ? setHidden("") : setHidden("hidden")
+  }
+return(
+<>
+  <header className={`flex bg-black text-white px-4 `}>
+  <button onClick={handleHidden} class='text-white p-2 rounded-lg m-1 text-xl'>Menu</button>
   <h1>{title}</h1>
 </header>
 <nav class={isHidden}>
@@ -21,6 +18,9 @@ const handleHidden = () => {
     </li>
   </ol>
 </nav>
+</>
+  )
+}
 
 <style>
   header {
