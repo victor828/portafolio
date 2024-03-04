@@ -4,57 +4,123 @@ import BaseHead from "../components/BaseHead.astro";
 ---
 
 <!doctype html>
-<html lang="es" class="h-screen">
+<html lang='es' class='h-screen'>
   <head>
     <BaseHead
-      title="Home"
-      description="Portafolio Victor Eduardo Orozco Martinez, Full Stack web developer"
+      title='Home'
+      description='Portafolio Victor Eduardo Orozco Martinez, Full Stack web developer'
     />
     <ViewTransitions />
   </head>
   <body>
     <main>
-      <div class="container">
-        <section class="🦖 scale-up-horizontal-left">
+      <div class='container'>
+        <section class='🦖 animate-zoom-in'>
           <img
-            width="50%"
-            class="rounded-[50%]"
-            src="/public/FB_IMG_1709142432381.jpg"
-            alt="profile photo"
+            width='50%'
+            class='rounded-[50%]'
+            src='/public/FB_IMG_1709142432381.jpg'
+            alt='profile photo'
           />
           <h1>
             Hi! i'm <strong>Victor</strong>
           </h1>
-          <h2><span class="text-yellow-200">Full Stack</span> Web Developer</h2>
+          <h2><span class='text-yellow-200'>Full Stack</span> Web Developer</h2>
           <h3>Technologies</h3>
           <p>
-            <span class="text-red-400">HTML</span> | <span class="text-blue-400"
+            <span class='text-red-400'>HTML</span> | <span class='text-blue-400'
               >CSS</span
-            > | <span class="text-yellow-400">javaScript</span> | <span
-              class="text-blue-600">TypesCript</span
-            > | <span class="text-violet-400">React</span> | <span
-              class="text-black">Next</span
-            > | <span class="text-red-400">A</span>stro | <span
-              class="text-red-400">Vite</span
+            > | <span class='text-yellow-400'>javaScript</span> | <span
+              class='text-blue-600'>TypesCript</span
+            > | <span class='text-violet-400'>React</span> | <span
+              class='text-black'>Next</span
+            > | <span class='text-red-400'>A</span>stro | <span
+              class='text-red-400'>Vite</span
             >
           </p>
         </section>
         <a
-          class="😶‍🌫️ scale-up-horizontal-right shake-left-right"
-          href="/proyects">
+          class='😶‍🌫️ hover:animate-zoom-in scale-up-horizontal-right shake-left-right'
+          href='/proyects'>
           <section><h2>Proyects</h2></section>
         </a>
-        <a class="🦝 scale-up-vertical-top" href="/about">
+        <section class='🦝⬅️ animate-pulse grid items-center'>
+          <h3 class='text-2xl'>Work: freelancer & hiring</h3>
+        </section>
+        <section class='🦝➡️ grid animate-slide-in-top'>
+          <p class='h-auto'>links</p>
+          <div
+            class='grid gap-2 justify-between border-white border rounded-lg'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              class='icon icon-tabler icon-tabler-brand-linkedin'
+              width='44'
+              height='44'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='#2c3e50'
+              fill='none'
+              stroke-linecap='round'
+              stroke-linejoin='round'>
+              <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+              <path
+                d='M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z'
+              ></path>
+              <path d='M8 11l0 5'></path>
+              <path d='M8 8l0 .01'></path>
+              <path d='M12 16l0 -5'></path>
+              <path d='M16 16v-3a2 2 0 0 0 -4 0'></path>
+            </svg>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              class='icon icon-tabler icon-tabler-brand-github'
+              width='44'
+              height='44'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='#2c3e50'
+              fill='none'
+              stroke-linecap='round'
+              stroke-linejoin='round'>
+              <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+              <path
+                d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5'
+              ></path>
+            </svg>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              class='icon icon-tabler icon-tabler-mail-filled'
+              width='44'
+              height='44'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='#9e9e9e'
+              fill='none'
+              stroke-linecap='round'
+              stroke-linejoin='round'>
+              <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+              <path
+                d='M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z'
+                stroke-width='0'
+                fill='currentColor'></path>
+              <path
+                d='M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z'
+                stroke-width='0'
+                fill='currentColor'></path>
+            </svg>
+          </div>
+        </section>
+        <a class='🦝 scale-up-vertical-top' href='/about'>
           <section><h2>About</h2></section>
         </a>
       </div>
 
-      <!-- <style>
+      <style>
         h1 strong {
           color: tomato;
         }
         main {
-          /* height: 100vh; */
+          height: 100vh;
           background: var(--backround-body);
           box-sizing: border-box;
           /* padding: 3%; */
@@ -68,7 +134,7 @@ import BaseHead from "../components/BaseHead.astro";
           gap: 0.5rem;
           width: 90%;
           margin: auto;
-          height: 100%;
+          /* height: 100%; */
           padding: 3%;
         }
         a:hover {
@@ -78,6 +144,7 @@ import BaseHead from "../components/BaseHead.astro";
           transform: scale(1.05);
           bottom: 10px;
         }
+
         .🦖 {
           background-color: var(--backround-section-home);
 
@@ -87,6 +154,7 @@ import BaseHead from "../components/BaseHead.astro";
           padding: 1rem;
           text-align: center;
           justify-items: center;
+          height: auto;
         }
         .🦖 img {
           aspect-ratio: 6/6;
@@ -102,18 +170,37 @@ import BaseHead from "../components/BaseHead.astro";
           border: var(--border-color);
           padding: 0.5rem;
           text-align: center;
+          height: auto;
         }
         .🦝 {
           background-color: var(--backround-section-home);
-
           border-radius: 1rem;
           border: var(--border-color);
           padding: 0.5rem;
           text-align: center;
+          height: auto;
+        }
+        .🦝⬅️ {
+          background-color: var(--backround-section-home);
+          border-radius: 1rem;
+          border: var(--border-color);
+          padding: 0.5rem;
+          /* height: 20%; */
+          text-align: center;
+          width: auto;
+        }
+        .🦝➡️ {
+          background-color: var(--backround-section-home);
+          border-radius: 1rem;
+          border: var(--border-color);
+          padding: 0.5rem;
+          text-align: center;
+          /* height: 20%; */
+          width: auto;
         }
 
         /* here is the media  */
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
           a:hover {
             transform: scale(1.1);
             bottom: 10px;
@@ -126,21 +213,46 @@ import BaseHead from "../components/BaseHead.astro";
             /* padding-top: 5%; */
             /* width: 80%; */
             height: 85%;
+            display: grid;
+            grid-template-areas:
+              "a b b"
+              "a c d"
+              "a e e";
           }
           .🦖 {
             border-radius: 1rem;
             border: 1px solid white;
-            grid-column: 1;
-            grid-row: 1/3;
+            /* grid-column: 1; */
+            /* grid-row: 1/3; */
+            grid-area: a;
           }
 
-          .😶‍🌫️ {
+          .🦝⬅️ {
+            grid-area: c;
             border-radius: 4px;
             border: 1px solid white;
-            grid-column: 2/2;
+            /* grid-column: 2/2; */
             padding: 1rem;
             border-radius: 1rem;
             text-align: center;
+          }
+          .🦝➡️ {
+            grid-area: d;
+            border-radius: 4px;
+            border: 1px solid white;
+            /* grid-column: 2/2; */
+            padding: 1rem;
+            border-radius: 1rem;
+            text-align: center;
+          }
+          .😶‍🌫️ {
+            border-radius: 4px;
+            border: 1px solid white;
+            /* grid-column: 2/2; */
+            padding: 1rem;
+            border-radius: 1rem;
+            text-align: center;
+            grid-area: b;
           }
           .🦝 {
             min-width: 200px;
@@ -148,6 +260,7 @@ import BaseHead from "../components/BaseHead.astro";
             border-radius: 1rem;
             padding: 1rem;
             text-align: center;
+            grid-area: e;
           }
         }
         @media (min-width: 2560px) {
@@ -174,7 +287,7 @@ import BaseHead from "../components/BaseHead.astro";
         }
         @keyframes scale-up-horizontal-left {
           0% {
-            transform: scaleX(0.4);
+            transform: scaleX(0);
             transform-origin: left center;
           }
           100% {
@@ -188,7 +301,7 @@ import BaseHead from "../components/BaseHead.astro";
         }
         @keyframes scale-up-horizontal-right {
           0% {
-            transform: scaleX(0.4);
+            transform: scaleX(0);
             transform-origin: right center;
           }
           100% {
@@ -202,7 +315,7 @@ import BaseHead from "../components/BaseHead.astro";
         }
         @keyframes scale-up-vertical-top {
           0% {
-            transform: scaleY(0.4);
+            transform: scaleY(0);
             transform-origin: center top;
           }
           100% {
@@ -210,7 +323,7 @@ import BaseHead from "../components/BaseHead.astro";
             transform-origin: center top;
           }
         }
-      </style> -->
+      </style>
     </main>
   </body>
 </html>
