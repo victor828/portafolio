@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 
@@ -9,30 +10,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
     <style></style>
+    <ViewTransitions />
   </head>
 
-  <body>
+  <body class='h-screen'>
     <Header />
-    <main>
-      <article>
-        <div>
-          {
-            heroImage && (
-              <img width={1020} height={510} src={heroImage} alt='' />
-            )
-          }
-        </div>
-        <div>
-          <div>
-            <div>
-              {updatedDate && <div />}
-            </div>
-            <h1>{title}</h1>
-            <hr />
-          </div>
-          <slot />
-        </div>
-      </article>
-    </main>
+    <slot />
+    <style>
+      body {
+        background: var(--backround-body);
+      }
+    </style>
   </body>
 </html>

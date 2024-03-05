@@ -35,7 +35,7 @@ export function HeaderMenu() {
           <li class='hover:bg-gradient-to-r from-[#5d5d5d] to-[#4f4f4f] text-center rounded-lg p-2 active:bg-gradient-to-r active:from-[#454545] active:to-[#3d3d3d]'>
             <a
               class='font-bold block text-white text-3xl w-full  hover:text-white'
-              href='/proyect'>
+              href='/proyects'>
               Proyects
             </a>
           </li>
@@ -55,7 +55,7 @@ export function HeaderMenu() {
             </a>
           </li>
           <li class=' hover:cursor-pointer hover:bg-slate-700 active:bg-slate-800 p-2 rounded-lg'>
-            <a class='text-white w-full hover:text-white' href='/proyect'>
+            <a class='text-white w-full hover:text-white' href='/proyects'>
               Proyects
             </a>
           </li>
