@@ -18,23 +18,23 @@ export function HeaderMenu() {
       <nav
         class={`${isHidden} animate-flip-in-y p-3 w-[30%] fixed top-14  bg-gradient-to-r from-[#6d6d6d] to-[#5d5d5d] rounded-2xl  text-white  `}>
         <ol class='grid gap-2 '>
-          <li class='hover:bg-gradient-to-r from-[#5d5d5d] to-[#4f4f4f] text-center rounded-lg p-2 active:bg-gradient-to-r active:from-[#454545] active:to-[#3d3d3d]'>
+          <li class='hover:bg-gradient-to-r from-[#5d5d5d] to-[#4f4f4f] text-center rounded-lg active:bg-gradient-to-r active:from-[#454545] active:to-[#3d3d3d]'>
             <a
-              class='font-bold block text-white text-3xl w-full  hover:text-white'
+              class='font-bold block text-white text-3xl w-full p-2  hover:text-white'
               href='/'>
               Home
             </a>
           </li>
-          <li class='hover:bg-gradient-to-r from-[#5d5d5d] to-[#4f4f4f] text-center rounded-lg p-2 active:bg-gradient-to-r active:from-[#454545] active:to-[#3d3d3d]'>
+          <li class='hover:bg-gradient-to-r from-[#5d5d5d] to-[#4f4f4f] text-center rounded-lg active:bg-gradient-to-r active:from-[#454545] active:to-[#3d3d3d]'>
             <a
-              class='font-bold block text-white text-3xl w-full  hover:text-white'
+              class='font-bold block text-white text-3xl w-full p-2  hover:text-white'
               href='/about'>
               About
             </a>
           </li>
-          <li class='hover:bg-gradient-to-r from-[#5d5d5d] to-[#4f4f4f] text-center rounded-lg p-2 active:bg-gradient-to-r active:from-[#454545] active:to-[#3d3d3d]'>
+          <li class='hover:bg-gradient-to-r from-[#5d5d5d] to-[#4f4f4f] text-center rounded-lg active:bg-gradient-to-r active:from-[#454545] active:to-[#3d3d3d]'>
             <a
-              class='font-bold block text-white text-3xl w-full  hover:text-white'
+              class='font-bold block text-white text-3xl w-full   hover:text-white'
               href='/proyects'>
               Proyects
             </a>
@@ -44,18 +44,18 @@ export function HeaderMenu() {
       {/* tablet */}
       <nav class=' max-md:hidden  w-full text-2xl'>
         <ul class='flex justify-center gap-10 px-10 py-2'>
-          <li class=' hover:cursor-pointer  hover:bg-slate-700 active:bg-slate-800 p-2 rounded-lg'>
-            <a class='text-white w-full hover:text-white' href='/'>
+          <li class=' hover:cursor-pointer  hover:bg-slate-700 active:bg-slate-800  rounded-lg'>
+            <a class='text-white w-full hover:text-white p-4' href='/'>
               Home
             </a>
           </li>
-          <li class=' hover:cursor-pointer hover:bg-slate-700 active:bg-slate-800 p-2 rounded-lg'>
-            <a class='text-white w-full hover:text-white' href='/about'>
+          <li class=' hover:cursor-pointer hover:bg-slate-700 active:bg-slate-800  rounded-lg'>
+            <a class='text-white w-full hover:text-white p-4' href='/about'>
               About
             </a>
           </li>
-          <li class=' hover:cursor-pointer hover:bg-slate-700 active:bg-slate-800 p-2 rounded-lg'>
-            <a class='text-white w-full hover:text-white' href='/proyects'>
+          <li class=' hover:cursor-pointer hover:bg-slate-700 active:bg-slate-800  rounded-lg'>
+            <a class='text-white w-full hover:text-white p-4' href='/proyects'>
               Proyects
             </a>
           </li>

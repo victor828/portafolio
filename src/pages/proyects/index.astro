@@ -1,23 +1,31 @@
 ---
+import ButtonBezel from "../../components/ButtonBezel.astro";
 import BlogPost from "../../layouts/BlogPost.astro";
+import CardProyect from "../../components/CardProyect.astro";
+import Button from "../../components/Button.astro";
 ---
 
 <BlogPost title='Proyects'>
-  <main class=''>
-    <h1 class='text-center'>Proyectos</h1>
-    <section class='justify-center flex gap-16'>
-      <button class='text-white border border-white p-2 rounded-md'
-        >Frontend</button
-      >
-      <button class='text-white border border-white p-2 rounded-md'
-        >Backend</button
-      >
-      <button class='text-white border border-white p-2 rounded-md'
-        >Full Stack</button
-      >
-    </section>
-    <div class='border border-white p-4 mx-12 rounded-2xl h-32 mt-8'>
-      <p>aqui van los proyectos</p>
-    </div>
-  </main>
+  <!-- <main class=''> -->
+  <!-- <div class='h-screen'> -->
+  <section class='justify-center flex gap-16 pt-4'>
+    <button class='text-white border border-white p-2 rounded-md'
+      >Frontend</button
+    >
+    <button class='text-white border border-white p-2 rounded-md'
+      >Backend</button
+    >
+    <button class='text-white border border-white p-2 rounded-md'
+      >Full Stack</button
+    >
+  </section>
+  <div class='border border-white p-4 mx-12 rounded-2xl h-32 mt-8'>
+    <p>aqui van los proyectos</p>
+  </div>
+  <ButtonBezel size='l'>Button bezel</ButtonBezel>
+  <Button size='l'>button normal</Button>
+  <CardProyect />
+  <!-- </div> -->
+
+  <!-- </main> -->
 </BlogPost>

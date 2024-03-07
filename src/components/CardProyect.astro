@@ -1,0 +1,25 @@
+---
+const { title, image = "favicon.svg" } = Astro.props;
+---
+
+<section class='p-2 w-64 h-96 my-4 border rounded-lg border-cyan-200 m-auto'>
+  <img
+    src={image}
+    alt='Image Proyect'
+    class='border border-cyan-200 rounded-lg w-52 mx-auto'
+  />
+  <article class='bg-cyan-600 h-32 rounded-lg my-4'>
+    <div>
+      <h1>{title}</h1>
+      <slot />
+    </div>
+    <section>
+      <article>capsule component</article>
+    </section>
+  </article>
+</section>
+<style>
+  img {
+    aspect-ratio: 90/90;
+  }
+</style>

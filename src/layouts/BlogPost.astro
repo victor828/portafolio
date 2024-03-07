@@ -3,19 +3,19 @@ import { ViewTransitions } from "astro:transitions";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <html lang='en'>
   <head>
     <BaseHead title={title} description={description} />
-    <style></style>
     <ViewTransitions />
   </head>
 
-  <body class='h-screen'>
+  <body class='md:h-[100svh]'>
     <Header />
     <slot />
+    <!-- styles -->
     <style>
       body {
         background: var(--backround-body);

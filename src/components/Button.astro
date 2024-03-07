@@ -1,6 +1,6 @@
 ---
-const { text, href = "", size = "w-full", add = "" } = Astro.props;
-const Type = href === "" ? "button" : "a";
+const { href = "", size = "w-full", add = "" } = Astro.props;
+const Type = href === "s" ? "button" : "a";
 const Size =
   size === "s"
     ? "w-24"
@@ -13,5 +13,5 @@ const Size =
 
 <Type
   class={`bg-cyan-500 w- text-cyan-950 hover:bg-cyan-600  p-2 rounded-lg   active:bg-cyan-700 disabled:bg-cyan-950 disabled:text-cyan-700 ${add} ${Size}`}>
-  {text}
+  <slot />
 </Type>

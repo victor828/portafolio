@@ -7,7 +7,8 @@
 :root {
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
-  --backround-body: linear-gradient(#111111, #111111, #111111, rgb(0, 88, 88));
+  --backround-body: linear-gradient(#111111 40%, rgb(0, 88, 88)) 60%;
+  /* --backround-section-home: #00bfb9 */
   --backround-section-home: rgba(79, 79, 79, 0.4);
   --section-hover: rgb(93, 93, 93);
   --section-home-text: #ffffff;
@@ -17,22 +18,22 @@
   --section-home-font-weight: 300;
   --section-home-font-height: 28px;
   --section-home-hover-border: #e5979c;
-  --border-color: 1px solid rgba(255, 255, 255, 0.363);
-    --50: '#f6f6f6'
-    --100: '#e7e7e7'
-    --200: '#d1d1d1'
-    --300: '#b0b0b0'
-    --400: '#888888'
-    --500: '#6d6d6d'
-    --600: '#5d5d5d'
-    --700: '#4f4f4f'
-    --800: '#454545'
-    --900: '#3d3d3d'
-    --950: '#111111'
+  --border-color: 1px solid rgba(255, 255, 255, 0.4);
+  --deep-sea-green-50: #ecfffd;
+  --deep-sea-green-100: #bdfffe;
+  --deep-sea-green-200: #7bffff;
+  --deep-sea-green-300: #31fdff;
+  --deep-sea-green-400: #00fff8;
+  --deep-sea-green-500: #00eddf;
+  --deep-sea-green-600: #00bfb9;
+  --deep-sea-green-700: #009794;
+  --deep-sea-green-800: #007777;
+  --deep-sea-green-900: #005858;
+  --deep-sea-green-950: #003b3d;
 }
 
 * {
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   margin: 0;
   padding: 0;
 }
@@ -48,4 +49,3 @@ h6 {
   font-weight: 600;
   padding: 0.25rem;
 }
-

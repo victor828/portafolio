@@ -1,23 +1,12 @@
 ---
-import { ViewTransitions } from "astro:transitions";
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
+import BlogPost from "../../layouts/BlogPost.astro";
 ---
 
 <html lang='en'>
-  <head>
-    <BaseHead
-      title='About'
-      description='About me, ho a im'
-      image='/public/fonts/alien.svg'
-    />
-    <ViewTransitions />
-  </head>
-
-  <main class='lg:h-screen'>
-    <Header title='About me' />
+  <BlogPost title='About'>
+    <!-- <main class='lg:h-screen'> -->
     <div class='container flex gap-4 max-md:grid'>
-      <article class='🦖 😎'>
+      <article class='🦖 😎 animate-slide-in-left duration-1000'>
         <h2>Algo sobre mi</h2>
         <p class='text-white'>
           ¡Hola! Encantado de conocerte, soy Victor. Me caracterizo por ser una
@@ -160,50 +149,51 @@ import Header from "../../components/Header.astro";
           </details>
         </details>
       </article>
+      <!-- </main> -->
+      <style>
+        main {
+          /* height: 100vh; */
+          background: var(--backround-body);
+        }
+        .container {
+          padding-inline: 3%;
+          margin-inline: auto;
+          box-sizing: border-box;
+          padding-bottom: 3%;
+        }
+
+        .🦖 {
+          color: aliceblue;
+          /* max-width: auto; */
+          text-wrap: pretty;
+          padding: 1rem;
+          border-radius: 1rem;
+          border: var(--border-color);
+          background-color: rgba(79, 79, 79, 0.4);
+          border-color: rgb(93, 93, 93);
+          box-sizing: border-box;
+        }
+        🦖 p {
+          opacity: 100%;
+        }
+
+        .🦝:hover,
+        .😶‍🌫️:hover {
+          border-color: rgb(230 57 70);
+          font-style: italic;
+        }
+        .📜,
+        li {
+          position: relative;
+          left: 20px;
+          list-style: circle;
+        }
+
+        li:hover {
+          color: brown;
+        }
+      </style>
     </div>
-  </main>
-
-  <style>
-    main {
-      /* height: 100vh; */
-      background: var(--backround-body);
-    }
-    .container {
-      padding-inline: 3%;
-      margin-inline: auto;
-      box-sizing: border-box;
-      padding-bottom: 3%;
-    }
-
-    .🦖 {
-      color: aliceblue;
-      /* max-width: auto; */
-      text-wrap: pretty;
-      padding: 1rem;
-      border-radius: 1rem;
-      border: var(--border-color);
-      background-color: rgba(79, 79, 79, 0.4);
-      border-color: rgb(93, 93, 93);
-      box-sizing: border-box;
-    }
-    🦖 p {
-      opacity: 100%;
-    }
-
-    .🦝:hover,
-    .😶‍🌫️:hover {
-      border-color: rgb(230 57 70);
-      font-style: italic;
-    }
-    .📜,
-    li {
-      position: relative;
-      left: 20px;
-      list-style: circle;
-    }
-
-    li:hover {
-      color: brown;
-    }
-  </style>
+    <!-- </main> -->
+  </BlogPost>
 </html>
