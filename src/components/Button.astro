@@ -1,6 +1,6 @@
 ---
-const { href = "", size = "w-full", add = "" } = Astro.props;
-const Type = href === "s" ? "button" : "a";
+const { href = "", size = "full", add = "" } = Astro.props;
+const Type = href === "" ? "button" : "a";
 const Size =
   size === "s"
     ? "w-24"
@@ -8,10 +8,13 @@ const Size =
       ? "w-48"
       : size === "l"
         ? "w-72"
-        : "w-full";
+        : size === "full"
+          ? "w-full"
+          : "";
 ---
 
 <Type
-  class={`bg-cyan-500 w- text-cyan-950 hover:bg-cyan-600  p-2 rounded-lg   active:bg-cyan-700 disabled:bg-cyan-950 disabled:text-cyan-700 ${add} ${Size}`}>
+  class={`bg-cyan-500 w- text-cyan-950 hover:bg-cyan-600  p-2 rounded-lg   active:bg-cyan-700 disabled:bg-cyan-950 disabled:text-cyan-700 ${add} ${Size}`}
+>
   <slot />
 </Type>

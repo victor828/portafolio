@@ -1,5 +1,5 @@
 ---
-const { text, href = "", size = "w-full", add = "" } = Astro.props;
+const { href = "", size = "full", add = "" } = Astro.props;
 const Type = href === "" ? "button" : "a";
 const Size =
   size === "s"
@@ -8,7 +8,9 @@ const Size =
       ? "w-48"
       : size === "l"
         ? "w-72"
-        : "w-full";
+        : size === "full"
+          ? "w-full"
+          : "";
 
 const background =
   "bg-gradient-to-t from-[#00eddf] to-[#00bfb9] w- text-[#003b3d] ";
@@ -19,7 +21,8 @@ const activeBackround =
 ---
 
 <Type
-  class={`🦖 p-2 rounded-lg bg-gradient ${background} ${hoverBackround}  ${activeBackround}  ${add} ${Size}`}>
+  class={`🦖 p-2 rounded-lg bg-gradient ${background} ${hoverBackround}  ${activeBackround}  ${add} ${Size}`}
+>
   <slot />
 </Type>
 
