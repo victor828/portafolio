@@ -1,20 +1,25 @@
 ---
 import BlogPost from "../../layouts/BlogPost.astro";
 import Button from "../../components/Button.astro";
+import ButtonBezel from "../../components/ButtonBezel.astro";
+import CardProyect from "../../components/CardProyect.astro";
 ---
 
-<BlogPost title='Proyects'>
-  <div class='justify-center grid gap-4'>
-    <Button size='s'>
-      example 1
-      <Button size='m'>
-        example 2
-        <Button size='l'>example 3</Button>
-        <Button>example 4</Button>
-        <div class='h-24 border border-cyan-400 rounded-md p-4 m-4'>
-          <h1>Hello</h1>
-        </div>
-      </Button>
-    </Button>
-  </div>
+<BlogPost title="Proyects">
+  <main class="h-full">
+    <div class="justify-center grid gap-4">
+      <Button size="s">example 1</Button>
+      <Button size="m">example 2</Button>
+      <Button size="l">example 3</Button>
+      <div class="h-24 border border-cyan-400 rounded-md p-4 m-4">
+        <h1 class="mb-4">Hello</h1>
+      </div>
+      <ButtonBezel size="s">example 5</ButtonBezel>
+      <ButtonBezel size="m">example 6</ButtonBezel>
+      <ButtonBezel add="mb-4" size="l">example 7</ButtonBezel>
+    </div>
+    <Button add="mb-4">example 4</Button>
+    <ButtonBezel>example 8</ButtonBezel>
+    <CardProyect />
+  </main>
 </BlogPost>
