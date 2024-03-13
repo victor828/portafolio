@@ -7,7 +7,7 @@ import BlogPost from "../../layouts/BlogPost.astro";
     <!-- <main class='lg:h-screen'> -->
     <div class="container flex gap-4 max-md:grid">
       <article class="🦖 😎 animate-slide-in-left duration-1000">
-        <h2>Algo sobre mi</h2>
+        <h2>About me</h2>
         <p class="text-white">
           ¡Hola! Encantado de conocerte, soy Victor. Me caracterizo por ser una
           persona curiosa y apasionada por el aprendizaje en todas sus formas. A
@@ -33,7 +33,7 @@ import BlogPost from "../../layouts/BlogPost.astro";
         </p>
       </article>
       <article class="🦖">
-        <h2>Eduacion</h2>
+        <h2>Education</h2>
         <p>
           Mi formación en desarrollo web la obtuve en Codeable, un bootcamp full
           stack que me enseñó desde los fundamentos hasta las técnicas más
@@ -95,12 +95,10 @@ import BlogPost from "../../layouts/BlogPost.astro";
           class="animate-fade-in-down px-4 cursor-pointer"
         >
           <summary class="animate-fade-in-down"
-            ><span class="text-2xl">Aprendizaje con codeable</span></summary
+            ><span class="text-2xl">Learn whit Codeable</span></summary
           >
           <details class="animate-fade-in-down px-4" name="learned">
-            <summary
-              ><span class="text-2xl"><strong>base</strong></span></summary
-            >
+            <summary><span class="text-2xl">Base</span></summary>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -108,19 +106,17 @@ import BlogPost from "../../layouts/BlogPost.astro";
             </ul>
           </details>
           <details class="animate-fade-in-down px-4" name="learned">
-            <summary
-              ><span class="text-2xl"><strong> Frontend</strong></span></summary
-            >
+            <summary><span class="text-2xl">Frontend</span></summary>
             <ul>
               <li>Vite</li>
               <li>React</li>
-              <li>CSS modules</li>
+              <li>CSS Modules</li>
               <li>Testing</li>
             </ul>
           </details>
           <details class="animate-fade-in-down px-4" name="learned">
             <summary>
-              <span class="text-2xl"><strong> Backend</strong></span>
+              <span class="text-2xl">Backend</span>
             </summary>
             <ul>
               <li>TypeScript</li>
@@ -136,7 +132,7 @@ import BlogPost from "../../layouts/BlogPost.astro";
           </details>
           <details class="animate-fade-in-down px-4" name="learned">
             <summary>
-              <span class="text-2xl"><strong> adicional</strong></span>
+              <span class="text-2xl">Aditional</span>
             </summary>
             <ul>
               <li>Big O notation</li>
@@ -144,41 +140,42 @@ import BlogPost from "../../layouts/BlogPost.astro";
           </details>
         </details>
 
-        <!-- <details
+        <details
           class="animate-fade-in-down px-4 cursor-pointer"
           name="learning"
         >
-          <summary><span class="text-2xl">Aprendizaje propio</span></summary>
-          <details class="animate-fade-in-down px-4">
-            <summary class="text-2xl">FrameWork</summary>
+          <summary><span class="text-2xl">Selft learning</span></summary>
+          <details name="types" class="animate-fade-in-down px-4">
+            <summary>FrameWork</summary>
             <details name="ml" class="animate-fade-in-down px-4">
-              <summary
-                ><span class="text-xl"><strong>Frontend</strong></span></summary
-              >
+              <summary><span>Frontend</span></summary>
               <ul>
                 <li>Astro</li>
                 <li>Next</li>
               </ul>
             </details>
             <details name="ml" class="animate-fade-in-down px-4">
-              <summary
-                ><span class="text-xl"><strong>Backend</strong></span></summary
-              >
-              <ul><li>NestJs</li></ul>
+              <summary><span>Backend</span></summary>
+              <ul><li>NestJS</li></ul>
             </details>
           </details>
-        </details> -->
+          <details name="types" class="animate-fade-in-down px-4">
+            <summary><span>Tecnologies</span></summary>
+            <ul>
+              <li>Go</li>
+            </ul>
+          </details>
+        </details>
 
         <details
           name="learning"
           class="animate-fade-in-down px-4 cursor-pointer"
         >
-          <summary><span class="text-2xl">Aprendiendo</span></summary>
+          <summary><span class="text-2xl">Learning</span></summary>
           <ul>
-            <ul><li>NestJs</li></ul>
-            <li><span>Astro</span></li>
-            <li><span>Next</span></li>
-            <li><span>Go</span></li>
+            <ul><li>NestJS</li></ul>
+            <!-- <li><span>Astro</span></li> -->
+            <!-- <li><span>Next</span></li> -->
           </ul>
         </details>
       </article>
