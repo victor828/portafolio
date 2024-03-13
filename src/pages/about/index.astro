@@ -95,7 +95,7 @@ import BlogPost from "../../layouts/BlogPost.astro";
           class="animate-fade-in-down px-4 cursor-pointer"
         >
           <summary class="animate-fade-in-down"
-            ><span class="text-2xl">aprendizaje con codeable</span></summary
+            ><span class="text-2xl">Aprendizaje con codeable</span></summary
           >
           <details class="animate-fade-in-down px-4" name="learned">
             <summary
@@ -143,22 +143,43 @@ import BlogPost from "../../layouts/BlogPost.astro";
             </ul>
           </details>
         </details>
-        <details name="learning">
-          <summary>Aprendizaje propio</summary>
-          <details>
-            <summary>FrameWork</summary>
-            <details>
-              <summary>FronEnd</summary>
+
+        <!-- <details
+          class="animate-fade-in-down px-4 cursor-pointer"
+          name="learning"
+        >
+          <summary><span class="text-2xl">Aprendizaje propio</span></summary>
+          <details class="animate-fade-in-down px-4">
+            <summary class="text-2xl">FrameWork</summary>
+            <details name="ml" class="animate-fade-in-down px-4">
+              <summary
+                ><span class="text-xl"><strong>Frontend</strong></span></summary
+              >
               <ul>
                 <li>Astro</li>
                 <li>Next</li>
               </ul>
             </details>
-            <details>
-              <summary>Backend</summary>
+            <details name="ml" class="animate-fade-in-down px-4">
+              <summary
+                ><span class="text-xl"><strong>Backend</strong></span></summary
+              >
               <ul><li>NestJs</li></ul>
             </details>
           </details>
+        </details> -->
+
+        <details
+          name="learning"
+          class="animate-fade-in-down px-4 cursor-pointer"
+        >
+          <summary><span class="text-2xl">Aprendiendo</span></summary>
+          <ul>
+            <ul><li>NestJs</li></ul>
+            <li><span>Astro</span></li>
+            <li><span>Next</span></li>
+            <li><span>Go</span></li>
+          </ul>
         </details>
       </article>
     </div>
@@ -203,7 +224,10 @@ import BlogPost from "../../layouts/BlogPost.astro";
       }
 
       li:hover {
-        color: brown;
+        color: #4dd0e1;
+      }
+      summary span:hover {
+        color: #80deea;
       }
     </style>
   </BlogPost>
